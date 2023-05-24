@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "storybook": "ng run tailwind-storybook:storybook",
+    "build-storybook": "ng run tailwind-storybook:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -26,13 +28,26 @@
     "@angular-devkit/build-angular": "^16.0.2",
     "@angular/cli": "~16.0.2",
     "@angular/compiler-cli": "^16.0.0",
+    "@storybook/addon-essentials": "^7.0.15",
+    "@storybook/addon-interactions": "^7.0.15",
+    "@storybook/addon-links": "^7.0.15",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/angular": "^7.0.15",
+    "@storybook/blocks": "^7.0.15",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/jasmine": "~4.3.0",
+    "autoprefixer": "^10.4.14",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.15",
+    "tailwindcss": "^3.3.2",
     "typescript": "~5.0.2"
   }
 }
